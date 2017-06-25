@@ -7,18 +7,18 @@ var  c = Number(prompt('Enter value of C'));
  
  function quadratic(a,b,c){
      if(a === 0){
-      return 'Enter value of A different from 0';
+      return 'Please reload the page and Enter value of A different from 0';
      }
      var D = b*b-4*a*c;
      if(D > 0){
      var x1 = (-b+Math.sqrt(D))/(2*a);
      var x2 = (-b-Math.sqrt(D))/(2*a);
-      return x1 + ' <br>' + x2;
+      return 'D = ' + D + '<br>' + 'x1 = ' + x1 + ' <br>' + 'x2 = ' + x2;
      }else if(D === 0){
      x1 = -b/(2*a);
-      return x1;
+      return 'D = 0' + '<br>' + 'x1 = '+ x1;
      }else{
-      return 'No valid results';
+      return 'D < 0' + '<br>'+ 'The equation has No valid results';
      }   
  }   
    
